@@ -1,8 +1,22 @@
-# Eric Meyer - Reset Stylesheet
+# Eric Meyer - CSS Reset Stylesheet
 
-Eric Meyer's CSS reset stylesheet as Sass.
+Eric Meyer's CSS reset stylesheet as [Sass](http://sass-lang.com/), delivered as a [Compass Extension](http://compass-style.org/docs/tutorials/extensions/) and [Ruby Gem](http://rubygems.org/).
 
 For more information: [http://meyerweb.com/eric/tools/css/reset/](http://meyerweb.com/eric/tools/css/reset/)
+
+## Installation
+
+    gem install meyer-reset
+
+Then add `require 'meyer-reset'` to your Compass config file.
+
+## Usage
+
+Using this is pretty easy. Simply import the extension into your stylesheet, preferably as the first import or declaration in your Sass stylesheet. [In the extension](https://github.com/adamstac/meyer-reset/styesheets/_meyer-reset.sass) we are including the mixin `+meyer-reset` for you in the last line, so all you will need to do is import and go.
+
+    @import meyer-reset
+    
+    ...
 
 ## License
 

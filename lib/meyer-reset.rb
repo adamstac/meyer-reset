@@ -5,6 +5,6 @@ Compass::Frameworks.register("meyer-reset", :path => "#{File.dirname(__FILE__)}/
 
 module MeyerReset
   
-  VERSION = "1.0.0".freeze
+  VERSION = "2.0.0".freeze
 
 end
