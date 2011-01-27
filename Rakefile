@@ -20,8 +20,7 @@ namespace :sass do
     system "mv stylesheets/compiled/_meyer-reset.css stylesheets/compiled/meyer-reset.css"
     # Compressed
     system "compass compile stylesheets/_meyer-reset.sass --output-style=compressed --force"
-    system "mkdir stylesheets/compiled/compressed"
-    system "mv stylesheets/compiled/_meyer-reset.css stylesheets/compiled/compressed/meyer-reset.css"
+    system "mv stylesheets/compiled/_meyer-reset.css stylesheets/compiled/meyer-reset-compressed.css"
   end
 
 end
