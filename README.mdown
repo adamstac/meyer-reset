@@ -12,7 +12,7 @@ Then add `require 'meyer-reset'` to your Compass config file.
 
 ## Usage
 
-Using this is pretty easy. Simply import the extension into your stylesheet, preferably as the first import or declaration in your Sass stylesheet. [In the extension](https://github.com/adamstac/meyer-reset/styesheets/_meyer-reset.sass) we are including the mixin `+meyer-reset` for you in the last line, so all you will need to do is import and go.
+Using this is pretty easy. Simply import the extension into your stylesheet, preferably as the first import or declaration in your Sass stylesheet. [In the extension](https://github.com/adamstac/meyer-reset/blob/master/stylesheets/_meyer-reset.sass) we are including the mixin `+meyer-reset` for you in the last line, so all you will need to do is import and go.
 
     @import meyer-reset
     
