@@ -38,6 +38,21 @@ The same rules apply as mentioned above. All you will need to do is import and g
     
     ...
 
+### Vanilla CSS
+
+This part of the project was included to just show how much can be done with using Sass as the pre-processor to CSS. As you can see below as well as in the "For Fun" section we can use our Sass code to output our CSS in many ways and do lots of creative things automatically with tools like [Rake](http://en.wikipedia.org/wiki/Rake_(software\)).
+
+If you want to just use the vanilla CSS that this Sass would output check out:
+
+* [stylesheets/compiled/meyer-reset.css](https://github.com/adamstac/meyer-reset/blob/master/stylesheets/compiled/meyer-reset.css)
+* [stylesheets/compiled/meyer-reset-compressed.css](https://github.com/adamstac/meyer-reset/blob/master/stylesheets/compiled/meyer-reset-compressed.css)
+
+Again, using curl, you can pull down either of those as raw files and just use the CSS.
+
+    curl -0 https://github.com/adamstac/meyer-reset/raw/master/stylesheets/_meyer-reset.sass
+    
+To see how these files were created, check out the section below which describes the various Rake tasks included in this project.
+
 ## For fun
 
 For those that want to learn about how to use Rake and also to play with how Sass/Compass works when compiling and what not, run the command `rake -T` to see a list of rake tasks to clear, build and release this gem, as well as compile and convert Sass.
