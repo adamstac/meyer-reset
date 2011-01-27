@@ -38,6 +38,16 @@ The same rules apply as mentioned above. All you will need to do is import and g
     
     ...
 
+## For fun
+
+For those that want to learn about how to use Rake and also to play with how Sass/Compass works when compiling and what not, run the command `rake -T` to see a list of rake tasks to clear, build and release this gem, as well as compile and convert Sass.
+
+    rake css:clear     # Clear the styles
+    rake gem:build     # Build the gem
+    rake gem:release   # Build and release the gem
+    rake sass:compile  # Compile new styles
+    rake sass:convert  # Converts the Sass to SCSS
+
 ## License
 
 None (public domain)
