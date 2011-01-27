@@ -1,4 +1,8 @@
 require 'lib/meyer-reset'
+require 'rubygems'
+require 'bundler/setup'
+
+Bundler.require(:default)
 
 namespace :sass do
 
@@ -7,7 +11,29 @@ namespace :sass do
     puts "*** Converting Sass to SCSS ***"
     system "sass-convert stylesheets/*.sass stylesheets/*.scss"
   end
+  
+  desc "Compile new styles"
+  task :compile do
+    puts "*** Compiling styles ***"
+    # Default
+    system "compass compile stylesheets/_meyer-reset.sass"
+    system "mv stylesheets/compiled/_meyer-reset.css stylesheets/compiled/meyer-reset.css"
+    # Compressed
+    system "compass compile stylesheets/_meyer-reset.sass --output-style=compressed --force"
+    system "mkdir stylesheets/compiled/compressed"
+    system "mv stylesheets/compiled/_meyer-reset.css stylesheets/compiled/compressed/meyer-reset.css"
+  end
 
+end
+
+namespace :css do
+  
+  desc "Clear the styles"
+  task :clear do
+    puts "*** Clearing styles ***"
+    system "rm -Rfv stylesheets/compiled"
+  end
+  
 end
 
 namespace :gem do
