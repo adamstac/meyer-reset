@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
 
   # Gem Details
   s.name = "meyer-reset"
-  s.description = %q{Reset stylesheet to reduce browser inconsistencies such as default line heights, margins and font sizes of headings, etc.}
-  s.summary = %q{Eric Meyer Reset stylesheet as Sass}
+  s.description = %q{Eric Meyer CSS Reset stylesheet as Sass to reduce browser inconsistencies such as default line heights, margins and font sizes of headings, etc.}
+  s.summary = %q{Eric Meyer CSS Reset stylesheet as Sass}
   s.authors = ["Adam Stacoviak"]
   s.email = "adam@stacoviak.com"
   s.homepage = "http://adamstacoviak.com/"
