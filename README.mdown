@@ -8,7 +8,7 @@ For more information: [http://meyerweb.com/eric/tools/css/reset/](http://meyerwe
 
 ### Compass Extension
 
-To install as a Ruby Gem for usage as Compass Extension run the following in your Terminal app.
+To install as a Ruby Gem to use this as a Compass Extension, run the following in your Terminal app.
 
     gem install meyer-reset
 
