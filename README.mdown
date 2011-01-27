@@ -12,7 +12,25 @@ Then add `require 'meyer-reset'` to your Compass config file.
 
 ## Usage
 
+### Compass Extension
+
 Using this is pretty easy. Simply import the extension into your stylesheet, preferably as the first import or declaration in your Sass stylesheet. [In the extension](https://github.com/adamstac/meyer-reset/blob/master/stylesheets/_meyer-reset.sass) we are including the mixin `+meyer-reset` for you in the last line, so all you will need to do is import and go.
+
+    @import meyer-reset
+    
+    ...
+
+### Simple Sass Partial
+
+For non Compass users, or someone who just wants to use this as a simple Sass partial vs installing as a Ruby Gem and Compass extension. In your terminal app, navigate to where you want to download this to.
+
+For example: `cd path/to/project/sass`
+
+Then use curl to pull down the raw file.
+
+    curl -0 https://github.com/adamstac/meyer-reset/raw/master/stylesheets/_meyer-reset.sass
+
+The same rules apply as mentioned above. All you will need to do is import and go.
 
     @import meyer-reset
     
