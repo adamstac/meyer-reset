@@ -1,0 +1,12 @@
+# Eric Meyer - Reset Stylesheet
+
+Eric Meyer's CSS reset stylesheet as Sass.
+
+For more information: [http://meyerweb.com/eric/tools/css/reset/](http://meyerweb.com/eric/tools/css/reset/)
+
+## License
+
+None (public domain)
+
+* v2.0 | 20110126
+* [http://meyerweb.com/eric/tools/css/reset/](http://meyerweb.com/eric/tools/css/reset/)
