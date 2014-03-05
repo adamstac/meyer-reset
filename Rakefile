@@ -1,3 +1,4 @@
+require './lib/meyer-reset'
 require 'rubygems'
 require 'bundler'
 Bundler.setup
