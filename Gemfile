@@ -1,3 +1,7 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org/'
 
-gem "compass", "~> 0.10.6"
+group :development do
+  gem 'rake'
+  gem 'sass'
+  gem 'compass'
+end

@@ -1,38 +1,31 @@
-require 'lib/meyer-reset'
 require 'rubygems'
-require 'bundler/setup'
+require 'bundler'
+Bundler.setup
 
-Bundler.require(:default)
+desc "Compile Sass"
+task :sass => 'sass:compile'
 
 namespace :sass do
 
-  desc "Converts the Sass to SCSS"
-  task :convert do
-    puts "*** Converting Sass to SCSS ***"
-    system "sass-convert stylesheets/*.sass stylesheets/*.scss"
+  desc "Watch Sass"
+  task :watch do
+    puts "*** Watching Sass ***"
+    system 'compass watch'
   end
-  
-  desc "Compile new styles"
+
+  desc "Compile Sass"
   task :compile do
-    puts "*** Compiling styles ***"
-    # Default
-    system "compass compile stylesheets/_meyer-reset.sass"
-    system "mv stylesheets/compiled/_meyer-reset.css stylesheets/compiled/meyer-reset.css"
-    # Compressed
-    system "compass compile stylesheets/_meyer-reset.sass --output-style=compressed --force"
-    system "mv stylesheets/compiled/_meyer-reset.css stylesheets/compiled/meyer-reset-compressed.css"
+    puts "*** Compiling Sass ***"
+    system 'compass compile'
   end
 
-end
-
-namespace :css do
-  
-  desc "Clear the styles"
-  task :clear do
-    puts "*** Clearing styles ***"
-    system "rm -Rfv stylesheets/compiled"
+  desc "Compile Sass for production"
+  task :prod do
+    puts "*** Compiling Sass ***"
+    system 'compass clean'
+    system 'compass compile --output-style compressed --force'
   end
-  
+
 end
 
 namespace :gem do
@@ -41,10 +34,10 @@ namespace :gem do
   task :build do
     system "gem build *.gemspec"
   end
- 
+
   desc "Build and release the gem"
   task :release => :build do
     system "gem push meyer-reset-#{MeyerReset::VERSION}.gem"
   end
-  
+
 end

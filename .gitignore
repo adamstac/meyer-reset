@@ -1,3 +1,2 @@
-*.gem
 Gemfile.lock
-.bundle/
+.sass-cache
