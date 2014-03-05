@@ -8,7 +8,7 @@
 
 # File system locations
 sass_dir              = 'stylesheets'
-css_dir               = 'stylesheets/compiled'
+css_dir               = 'stylesheets'
 
 # Set to true for easier debugging
 line_comments         = false
