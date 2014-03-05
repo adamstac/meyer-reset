@@ -24,5 +24,5 @@ Gem::Specification.new do |s|
   s.has_rdoc = false
   s.required_rubygems_version = ">= 2.2.1"
   s.rubygems_version = %q{2.2.1}
-  s.add_dependency("compass", [">= 0.10.5"])
+  s.add_dependency("compass", ["~> 0.10"])
 end
