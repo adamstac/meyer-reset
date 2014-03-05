@@ -1,4 +1,4 @@
-require 'lib/meyer-reset'
+require './lib/meyer-reset'
 
 Gem::Specification.new do |s|
   # Release Specific Information

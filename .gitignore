@@ -1,3 +1,4 @@
 Gemfile.lock
+*.gem
 .sass-cache
 stylesheets/meyer-reset.scss
