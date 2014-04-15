@@ -18,7 +18,7 @@ Using this in your Sass stylesheet is pretty easy. Simply import the extension i
 
 If you look at [the extension](https://github.com/adamstac/meyer-reset/blob/master/stylesheets/_meyer-reset.scss), you will notice that we are "including" the mixin `@include meyer-reset` for you in the last line. All you will need to do is import and go.
 
-    @import meyer-reset
+    @import "meyer-reset";
     
     ...
 
@@ -34,7 +34,7 @@ Then use curl to pull down the raw file.
 
 The same rules apply as mentioned above. All you will need to do is import and go.
 
-    @import meyer-reset
+    @import "meyer-reset";
     
     ...
 
