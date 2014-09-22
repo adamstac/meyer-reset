@@ -25,13 +25,7 @@
   blockquote, q {
     quotes: none;
   }
-  blockquote {
-    &:before, &:after {
-      content: "";
-      content: none;
-    }
-  }
-  q {
+  blockquote, q {
     &:before, &:after {
       content: "";
       content: none;
