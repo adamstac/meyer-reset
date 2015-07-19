@@ -30,7 +30,7 @@ For example: `cd path/to/project/sass`
 
 Then use curl to pull down the raw file.
 
-    curl -0 https://github.com/adamstac/meyer-reset/raw/master/stylesheets/_meyer-reset.scss
+    curl -0 https://raw.githubusercontent.com/adamstac/meyer-reset/master/stylesheets/_meyer-reset.scss >> _meyer-reset.scss
 
 The same rules apply as mentioned above. All you will need to do is import and go.
 
